@@ -1,0 +1,19 @@
+{
+    "name": "chuyd/mvc",
+    "description": "Proyecto Mirador",
+    "type": "proect",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Controllers\\": "controllers/",
+            "Models\\": "models/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Daniel Hurtado"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {"phpoffice/phpspreadsheet": "dev-master"}
+}

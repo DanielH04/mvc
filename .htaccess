@@ -1,0 +1,12 @@
+# OCULTO LAS CARPETAS DEL PROYECTO
+Options ALL -Indexes
+Options -MultiViews
+
+# CONFIGURAR REDIRECCION DE PETICIONES
+ErrorDocument 403 /mvc/modulos/views/404.php
+ErrorDocument 404 /mvc/modulos/views/404.php
+
+# HABILITAMOS FUNCIONALIDAD DE URL AMIGABLE
+RewriteEngine On 
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [QSA,L]
